@@ -1,0 +1,166 @@
+/*Reset browser CSS*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*All body style*/
+html,body{
+    	padding: 0px;
+    	margin: auto;
+    	height: 100%;
+    	overflow: auto;
+    	background: #042729;
+    	font-family: 'Gayathri', sans-serif;
+	text-align:center;
+}
+
+/*Page rain. Should be on background. Otherwise links doesnt work*/
+#rain{
+    	position: absolute;
+    	left: 0px;
+	right: auto;
+    	top: 0px;
+    	user-select: none;
+}
+@media only screen and (max-width: 600px) {
+    .raindrop:nth-child(3) {
+        display: none;
+    }
+}
+
+/*Main heading-Contact*/
+h1{
+    	text-align: center;
+    	margin-top: 170px;
+    	font-size: 52px;
+    	position: relative;
+    	color: white;
+	transition-property: font-size;
+	transition-duration: 5s;
+	transition-delay: 2s;
+}
+/*Heading ME diffenrent style. Span*/
+span.welcome{
+    	text-align: center;
+    	margin-top: 130px;
+    	font-size: 52px;
+    	position: relative;
+    	color: white;
+	transition-property: font-size;
+	transition-duration: 5s;
+	transition-delay: 2s;
+}
+
+h1:hover{
+	font-size:70px;
+	-webkit-transition: all 2000ms ease;
+	-moz-transition: all 2000ms ease;
+	-ms-transition: all 2000ms ease;
+	-o-transition: all 2000ms ease;
+	transition: all 2000ms ease;
+  	transition: 2s;
+  	opacity: 0.8;
+}
+span.welcome:hover{
+	font-size:120px;
+	-webkit-transition: all 2000ms ease;
+	-moz-transition: all 2000ms ease;
+	-ms-transition: all 2000ms ease;
+	-o-transition: all 2000ms ease;
+	transition: all 2000ms ease;
+  	transition: 2s;
+  	opacity: 0.9;
+
+}
+/*HOME button*/
+.svg-wrapper {
+  	height: 60px;
+  	margin: 0 auto;
+  	position: static;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	width: 320px;
+}
+
+.shape {
+  	fill: transparent;
+  	stroke-dasharray: 140 540;
+  	stroke-dashoffset: -474;
+  	stroke-width: 8px;
+  	stroke: #19f6e8;
+}
+
+.text {
+  	color: #fff;
+  	font-family: 'Roboto Condensed';
+  	font-size: 24px;
+  	letter-spacing: 8px;
+  	line-height: 32px;
+  	position: relative;
+  	top: -48px;
+  	text-decoration: none;
+}
+
+@keyframes draw {
+  0% {
+    	stroke-dasharray: 140 540;
+    	stroke-dashoffset: -474;
+    	stroke-width: 8px;
+  }
+  100% {
+    	stroke-dasharray: 760;
+    	stroke-dashoffset: 0;
+    	stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  	-webkit-animation: 0.5s draw linear forwards;
+  	animation: 0.5s draw linear forwards;
+}
+
+/*The little boxes where are font awesome icons and links*/
+.container {
+    	margin:auto;
+    	max-width:1100px;
+    	padding:0 20px;
+}
+.bg-dark {
+    	color:#fff;
+	font-size:16px;
+}
+.bg-dark a {
+    	color:#fff;
+	font-size:16px;
+}
+.bg-dark a:hover {
+    	color:#19f6e8;
+	font-size:20px;
+}
+/*Font awesome links front of rain. Otherwise links dont work*/
+#contact-info {
+	position: relative;
+}
+/*Font awesome kastikesed*/
+#contact-info .box{
+    	float:left;
+    	width:25%;
+    	padding:50px;
+    	text-align:center;
+	position: static;
+}
+#contact-info .box i {
+    	margin-bottom:10px;
+}
+#footer {
+	position: absolute;
+	padding: 10px 10px 0px 10px;
+	bottom: 0;
+	width: 100%;
+/* Height of the footer*/ 
+	height: 40px;
+/*background: grey;*/
+	color:white;
+}

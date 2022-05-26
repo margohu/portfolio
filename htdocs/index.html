@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<?php
+   include 'functions.php';
+?>
+<html lang="en">
+<head>
+	<title>MY portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="Margo`s portfolio">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<canvas id="rain"></canvas>
+	<link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 500px)" href="css/mobile.css">
+    <script media="screen and (max-width: 500px)" src="/js/test.js"></script>
+    <script src="https://kit.fontawesome.com/3464f4a29a.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+	<!--<script src="/js/rain.js"></script>-->	
+</head>
+<body>
+
+	<div id="container" class="bg-dark">
+    	<h1>MY portfolio- <span class="welcome">welcome</span></h1>
+<br>
+		<div class="svg-wrapper">
+			<svg height="60" width="320">
+			<rect class="shape" height="60" width="320" />
+		</svg>
+			<a href="about" class="text">About</a>
+		</div>
+
+         <div class="svg-wrapper">
+			<svg height="60" width="320">
+			<rect class="shape" height="60" width="320" />
+		</svg>
+			<a href="resume" class="text">Resume</a>
+		</div>
+
+		<div class="svg-wrapper">
+			<svg height="60" width="320">
+			<rect class="shape" height="60" width="320" />
+		</svg>
+			<a href="not_found" class="text">Deeds</a>
+		</div>
+
+		<div class="svg-wrapper">
+			<svg height="60" width="320">
+			<rect class="shape" height="60" width="320" />
+		</svg>
+			<a href="contact" class="text">Contact</a>
+		</div>
+	</div>
+
+<!--Dark mode-->
+	<section id="contact-info" class="bg-dark">
+	        <div class="container">
+                <h4 onclick="myFunction()"><i class="fa fa-moon-o" aria-hidden="true" fa-3x></i></h4>
+	        </div>
+	</section>
+
+
+<?php
+function getCurrentYear() {
+echo date('Y');
+}
+?>
+		<div id="footer">Margoh | All rights are reserved | &copy;2022<?php echo getCurrentYear(); ?></div>
+</body>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+</html>
